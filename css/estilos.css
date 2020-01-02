@@ -1,0 +1,308 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.ondas{
+	z-index: 3;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+
+}
+
+/*presentación*/
+#header{
+	background-color: #FFCD00;	
+	text-align: center;
+	cursor: url("../imgs/mano.png"), auto;
+}
+
+.cabezona{
+	width: 50%;	
+	z-index: 1;	
+}
+
+.espiral{
+	width: 50%;
+	margin-left: 10%;
+	margin-top: 10%;
+	position: absolute;
+	z-index: 2;
+}
+
+@keyframes giro{
+	0%{transform: rotate(0);}
+	100%{transform: rotate(-40turn);}
+	}
+
+.rotar{
+	width: 50%;
+	animation-name: giro;
+	animation-duration: 300s;
+	animation-delay: 0s;
+	animation-fill-mode:both; 
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+	position: absolute;
+	
+}
+
+.rotar:hover{
+  animation-play-state: running;
+}
+
+/*hola*/
+@font-face {
+   font-family: blacker-regular;
+   src: url(../fonts/blacker-display-regular.ttf);
+}
+
+#hola{
+	cursor: url("../imgs/down.png"), auto;
+}
+
+.nav{
+ font-family: montserrat;
+ letter-spacing: 0.2em;
+ margin-right: 2em;
+}
+
+.nav-link{
+	color:white;
+}
+
+.nav-link:hover{
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#hola{
+	background-color: black;
+	z-index: 4;
+}
+
+.contenedor-txt1 {
+	background-color: black;
+	padding-bottom: 2em;
+
+}
+
+.txt1{
+	color: white;
+	font-family: blacker-regular;
+	text-align: left;
+	font-size: 4em;
+	padding: 2em;
+	
+}
+
+
+@media screen and (max-width: 700px){
+.txt1{
+font-size:2em;
+}
+
+img.chico{
+	display: none;
+}
+
+#btn{margin-bottom: 3em;}
+}
+
+/*portfolio*/
+
+
+.navbar{
+	list-style-type: none;
+	font-family: montserrat;
+ 	letter-spacing: 0.2em;
+}
+
+
+
+#navLink{
+	color: #3f50f2 !important;	
+}
+
+.contenedorgal{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 5em;
+	padding-bottom: 10em;
+	justify-content: center;
+}
+
+ul {
+    padding-inline-start: 0 !important;
+}
+
+
+.portfolio-espiral{
+	margin-left: 2em;
+	animation-name: giro;
+	animation-duration: 300s;
+	animation-delay: 0s;
+	animation-fill-mode:both; 
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+#galeria {
+	list-style-type:none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.miniatura{
+	filter: grayscale(100%);
+	padding:2px;
+}
+
+.miniatura:hover{
+	filter: none;
+}
+
+
+
+
+/*contacto*/
+#contacto{
+	background-color: #3f50f2;	
+}
+
+.formulario{
+	display: flex;
+	justify-content: flex-end;
+	z-index: 10;
+
+
+}
+
+::placeholder{
+	color: white;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70%;
+}
+
+input{
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+
+input:focus {
+    outline:none;
+}
+
+textarea{
+	color: #3f50f2;
+}
+
+.casilla-nombre{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 30em;
+	border-bottom: 1px solid white;
+	background-color: #3f50f2;
+	margin-bottom: 1em;
+	
+}
+
+.casilla-mail{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 30em;
+	border-bottom: 1px solid white;
+	background-color: #3f50f2;
+	margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 375px){
+.casilla-nombre, .casilla-mail, #mensaje, .btn{
+	display: flex;
+	justify-content: center;
+	margin-right: 0.5em;
+	margin-left: 0.5em;	
+	max-width: 20em;
+}
+
+ul.navbar{
+		display: flex;
+	justify-content: flex-end;
+
+}
+}
+
+#mensaje{
+	border:white;
+	width: 30em;
+	height: 10em;
+	border: 1px solid white;
+	margin-bottom: 0.5em;
+}
+
+.btn{
+	background-color: #3f50f2;
+	border: 1px solid white;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 80%;
+	width:7em;
+	margin-bottom: 6em;
+	z-index: 20;
+}
+
+#btn{
+	display: flex; 
+	justify-content: flex-end;
+
+}
+
+
+ input[type=submit]:hover {
+  background-color: white;
+  color: #3f50f2;
+}
+
+.img-chico{
+		
+	margin-top: -30%;
+	text-align: center;
+
+	
+}
+
+.chico{
+	width: 80%;
+
+}
+
+.redes{
+	display: flex;
+	justify-content: center;
+
+}
+
+img.iconos{
+	width: 80%;
+	height: auto;
+}
+
+
+/*footer*/
+
+#footerCont{
+	font-family: montserrat;
+	color: #b2b2b2;
+	font-size: 0.6em;
+	letter-spacing: 0.1em;
+	text-align: right;
+	margin-right: 6em;
+	margin-bottom: 3em;
+}
+
