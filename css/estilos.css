@@ -99,16 +99,58 @@ body {
 }
 
 
+
 @media screen and (max-width: 700px){
-.txt1{
-font-size:2em;
+.txt1{font-size:2em;}
+
+img.chico{display: none;}
+
+div#btn{
+	margin-bottom: 3em;
+	display: block;
+	align-content: center;
 }
 
-img.chico{
-	display: none;
+input.btn{width: 90%;}
+
+
+input.casilla-mail, input.casilla-nombre, textarea#mensaje, form#formulario {
+	width: 90%;
+	align-content: center;
 }
 
-#btn{margin-bottom: 3em;}
+div.nav{
+	margin: 0;
+	display: block;
+	align-content: center;
+	text-align: right;
+}
+
+p, div#footerCont{
+	text-align: center; 
+	margin-right: 0; 
+	font-size: 0.7em;}
+}
+
+
+@media screen and (max-width: 450px){
+
+.txt1{font-size:1.5em; padding-bottom: 1em;}
+
+li{	width: 100px;}
+
+li.nav-item{width: 150px;}
+
+img.miniatura{width: 100%;}
+
+div.contenedorgal{padding-bottom: 20%; padding-top: 10%;}
+
+img.iconos{padding-top: 1em; padding-bottom: 1em;}
+
+a.hola{display: none;}
+
+.contenedor-txt1{padding-top: 1em;}
+
 }
 
 /*portfolio*/
@@ -222,21 +264,6 @@ textarea{
 	margin-bottom: 0.5em;
 }
 
-@media screen and (max-width: 375px){
-.casilla-nombre, .casilla-mail, #mensaje, .btn{
-	display: flex;
-	justify-content: center;
-	margin-right: 0.5em;
-	margin-left: 0.5em;	
-	max-width: 20em;
-}
-
-ul.navbar{
-		display: flex;
-	justify-content: flex-end;
-
-}
-}
 
 #mensaje{
 	border:white;
@@ -259,7 +286,7 @@ ul.navbar{
 
 #btn{
 	display: flex; 
-	justify-content: flex-end;
+	justify-content: center;
 
 }
 
