@@ -139,7 +139,11 @@ p, div#footerCont{
 
 @media screen and (max-width: 450px){
 
-.header-img, .espiral{padding-top: 3em;}
+.header-img, .espiral{padding-top: 3em; }
+
+img.cabezona, img.rotar {width: 80%;}
+
+.espiral{margin-left: 5%; margin-right: auto;}
 
 .txt1{font-size:2em; padding: 1em 0.5em 1em 0.5em;}
 
