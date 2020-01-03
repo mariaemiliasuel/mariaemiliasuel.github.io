@@ -101,7 +101,10 @@ body {
 
 
 @media screen and (max-width: 700px){
-div.header-img{padding-bottom: 2em;}	
+
+.rotar{animation-play-state: running;}
+
+div.header-img,{padding-bottom: 2em; padding-top: 3em;}	
 .txt1{font-size:2em;}
 
 img.chico{display: none;}
@@ -136,7 +139,9 @@ p, div#footerCont{
 
 @media screen and (max-width: 450px){
 
-.txt1{font-size:1.5em; padding-bottom: 1em;}
+.header-img, .espiral{padding-top: 3em;}
+
+.txt1{font-size:2em; padding: 1em 0.5em 1em 0.5em;}
 
 li{	width: 100px;}
 
